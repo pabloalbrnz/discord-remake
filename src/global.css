@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100&display=swap");
+
+:root {
+  /* Colors */
+  --grey-900: #edeef0;
+  --grey-800: #949ba4;
+  --grey-700: #393c43;
+  --grey-500: #313338;
+  --grey-300: #4e5056;
+  --grey-200: #2b2d31;
+  --grey-150: #232428;
+  --grey-100: #1e1f22;
+
+  --blurple: #5865f2;
+  --green: #57f287;
+  --yellow: #fee75c;
+  --pink: #eb459e;
+  --red: #ed4245;
+
+  /* Fonts */
+  --geologica: "Geologica", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}

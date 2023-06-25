@@ -1,0 +1,167 @@
+@import "../../global.css";
+
+* {
+  font-family: var(--geologica);
+}
+
+.InfoWrapper {
+  border-radius: 0.5rem 0 0 0;
+  background-color: var(--grey-200);
+  width: 14rem;
+  height: calc(100vh - 1.5rem - 3rem);
+}
+
+.InfoWrapperTitle {
+  border-radius: 0.5rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  height: 3rem;
+  border-bottom: 2px solid var(--grey-100);
+}
+
+.InfoWrapperTitle,
+.InfoWrapperGuildSetting {
+  transition: all 0.5s ease;
+}
+
+.InfoWrapperTitle:hover {
+  background-color: var(--grey-500);
+}
+
+.InfoWrapperChannels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.InfoWrapperGuildSettings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.InfoWrapperGuildSetting {
+  display: flex;
+  align-items: center;
+  width: 13rem;
+  color: var(--grey-800);
+  height: 2rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.InfoWrapperGuildSetting:hover {
+  background-color: var(--grey-500);
+  color: white;
+}
+
+.InfoWrapperGuildSetting div {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.InfoWrapperDivider {
+  width: 12.75rem;
+  height: 2px;
+  background-color: var(--grey-700);
+  align-self: center;
+}
+
+.InfoWrapperCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.InfoWrapperCategory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  color: var(--grey-800);
+  height: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.InfoWrapperCategory div {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.InfoWrapperCategory:hover div {
+  color: white;
+}
+
+.InfoWrapperCategoryChannels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.InfoWrapperChannel {
+  display: flex;
+  color: var(--grey-800);
+  font-size: 0.8rem;
+  height: 1.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 12.75rem;
+  margin-left: 0.75rem;
+}
+
+.InfoWrapperChannel:hover {
+  color: white;
+  background-color: var(--grey-500);
+}
+
+.InfoWrapperChannel .InfoWrapperChannelBtn {
+  width: 12.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.InfoWrapperChannel .InfoWrapperChannelBtn .InfoWrapperChannelName {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.InfoWrapperChannel .InfoWrapperChannelBtn svg {
+  font-size: 1.25rem;
+}
+
+.ChannelActive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grey-500);
+  color: white;
+}
+
+.Invite {
+  display: none;
+}
+
+.ChannelActive .Invite,
+.InfoWrapperChannel:hover .Invite {
+  display: block;
+}
+
+.Silenced {
+  color: var(--grey-300)
+}

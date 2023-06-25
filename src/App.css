@@ -1,0 +1,71 @@
+@import "./global.css";
+
+body {
+  background-color: var(--grey-100);
+}
+
+.Header {
+  height: 1.5rem;
+  background-color: var(--grey-100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 1rem;
+}
+
+.HeaderTitle {
+  font-family: var(--geologica);
+  font-size: 0.75rem;
+  color: var(--grey-800);
+  font-weight: 800;
+}
+
+.HeaderBtns {
+  display: flex;
+  color: var(--grey-800);
+  height: 1.5rem;
+}
+
+.HeaderBtn {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 1rem;
+}
+
+.HeaderClose,
+.HeaderMinimize,
+.HeaderMaximize {
+  transition: all 0.5s ease;
+}
+
+.HeaderClose:hover {
+  background-color: var(--red);
+  color: white;
+}
+
+.HeaderMinimize:hover {
+  background-color: var(--grey-200);
+  color: white;
+}
+
+.HeaderMaximize:hover {
+  background-color: var(--grey-200);
+  color: white;
+}
+
+.HeaderMinimize p {
+  margin-top: 2px;
+  font-size: 1.5rem;
+}
+
+.Wrapper {
+  display: flex;
+}
+
+.LeftWrapper {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,318 @@
+@import "../../global.css";
+
+.TextWrapper {
+  width: 100%;
+  height: calc(100vh - 1.5rem);
+  background-color: var(--grey-500);
+}
+
+.TextWrapperTopBar {
+  display: flex;
+  align-items: center;
+  color: var(--grey-900);
+  height: 2rem;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--grey-100);
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.TextWrapperChannelName {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+
+.TextWrapperChannelName svg {
+  color: var(--grey-800);
+}
+
+.TextWrapperDivider {
+  width: 1px;
+  height: 1.5rem;
+  background-color: var(--grey-700);
+}
+
+.TextWrapperChannelDesc {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--grey-800);
+}
+
+.TextWrapperTopBarBtns {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.TextWrapperTopBarBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--grey-800);
+  cursor: pointer;
+}
+
+.TextWrapperTopBarBtn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ActiveBtn {
+  color: var(--grey-900);
+}
+
+.TextWrapperSearchInput {
+  background-color: var(--grey-100);
+  color: var(--grey-800);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  cursor: text;
+}
+
+.TextWrapperSearchInput input,
+.TextWrapperTopBarBtn,
+.TextWrapperChatBoxInput,
+.TextWrapperChatBox svg {
+  transition: all 0.5s ease;
+}
+
+.TextWrapperSearchInput input {
+  background-color: transparent;
+  border: none;
+  width: 8rem;
+  color: var(--grey-800);
+}
+
+.TextWrapperSearchInput input::placeholder {
+  color: var(--grey-800);
+}
+
+.TextWrapperSearchInput input:focus {
+  outline: none;
+  width: 12rem;
+}
+
+.TextWrapperTopBarBtn:hover {
+  color: var(--grey-900);
+}
+
+.TextWrapperAllWrapper {
+  display: flex;
+}
+
+.TextWrapperChatMessages {
+  display: flex;
+  width: 58rem;
+  height: calc(100vh - 1.5rem - 3rem - 1px);
+}
+
+.TextWrapperMembersWrapper {
+  display: flex;
+  width: 15.5rem;
+  height: calc(100vh - 1.5rem - 3rem - 1px);
+  background-color: var(--grey-200);
+}
+
+.TextWrapperMembersRole {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.TextWrapperRoleMembers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1rem 0 1rem;
+  color: var(--grey-800);
+  font-size: 0.75rem;
+}
+
+.TextWrapperMember {
+  display: flex;
+  align-items: center;
+}
+
+.TextWrapperMemberAvatar {
+  width: 2rem;
+  height: 2rem;
+}
+
+.TextWrapperMemberAvatar img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.TextWrapperMemberUser {
+  display: flex;
+  flex-direction: column;
+  margin-left: -0.5rem;
+}
+
+.TextWrapperMemberStatus {
+  display: flex;
+  align-items: center;
+  font-size: 10.5px;
+  gap: 0.25rem;
+}
+
+.Blurple {
+  color: var(--blurple);
+}
+
+.TextWrapperStatusIcon {
+  display: flex;
+  transform: translate(-0.75rem, 0.75rem);
+  align-items: center;
+  justify-content: center;
+  color: var(--yellow);
+  background-color: var(--grey-150);
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 0.75rem;
+}
+
+.TextWrapperMembers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.Pink {
+  color: var(--pink);
+}
+
+.Red {
+  color: var(--red);
+}
+
+.Purple {
+  color: #6a29ec;
+}
+
+.Online {
+  color: var(--green);
+}
+
+.Idle {
+  transform: rotate(-90deg) translate(-0.75rem, -0.75rem);
+  color: var(--yellow);
+}
+
+.Busy {
+  color: var(--red);
+}
+
+.Streaming {
+  color: #583594;
+}
+
+.TextWrapperMemberStatus svg {
+  font-size: 12px;
+}
+
+.TextWrapperMemberUsername {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.TextWrapperMemberUsername .BotBadge {
+  display: flex;
+  gap: 0.125rem;
+  font-size: 0.625rem;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--blurple);
+  color: white;
+  align-items: center;
+}
+
+.Offline {
+  opacity: 0.5;
+}
+
+.OfflineUser {
+  margin-left: 0.75rem;
+}
+
+.TextWrapperChatMessages {
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TextWrapperChatBoxWrapper {
+  display: flex;
+  padding: 0 0 1.5rem 0;
+}
+
+.TextWrapperChatBox {
+  display: flex;
+  background-color: var(--grey-700);
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.TextWrapperChatBox .TextWrapperChatBoxButtons {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--grey-800);
+  cursor: pointer;
+}
+
+.TextWrapperChatBox .TextWrapperChatBoxButtons:hover {
+  color: var(--grey-900);
+}
+
+.TextWrapperChatBoxInput {
+  border: none;
+  background-color: transparent;
+  color: var(--grey-800);
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  cursor: text;
+  font-weight: 300;
+  width: 40rem;
+}
+
+.TextWrapperChatBoxInput:focus {
+  outline: none;
+}
+
+.TextWrapperChatBoxDivider {
+  width: 2px;
+  height: 1.5rem;
+  background-color: var(--grey-800);
+  opacity: 0.25;
+}
+
+.SendDesactive {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--grey-800);
+  opacity: 0.5;
+}
+
+.SendActive {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--blurple);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.SendActive:hover {
+  opacity: 1;
+}
